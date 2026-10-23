@@ -6,8 +6,7 @@ def book_appointment ():
     doctor = input ("Enter doctor's name:")
     date = input (" Enter appointment date:")
 
-    appointment = [name, age, doctor, date]
-    appointment. append (appointment)
+    appointment. append ([name, age, doctor, date])
     print (" Appointment booked Successfully")
 def view ():
     if len (appointment) == 0:
@@ -15,7 +14,7 @@ def view ():
     else:
         for i in appointment:
             print (" Patient:", i[0])
-            print (" Age:", ai[1])
+            print (" Age:", i[1])
             print (" Doctor:", i[2])
             print (" Date:", i[3])
 while True:
@@ -24,13 +23,13 @@ while True:
     print (" 2. View Appointment")
     print ("3. Exit")
     ch= input ("Enter choice:")
-    if ch == 1:
+    if ch == "1":
         book_appointment ()
-    elif ch == 2:
-        View ()
-    elif ch == 3:
+    elif ch == "2":
+        view ()
+    elif ch == "3":
         print (" Thank you...!")
-        Exit (0)
+        break
     else:
         print (" Invalid choice")
 

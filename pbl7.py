@@ -2,7 +2,7 @@
 def km_to_miles (km):
     return km * 0.621371
 
-def celsius_to_farenheit (c):
+def celsius_to_fahrenheit (c):
     return (c * 9/5) + 32
 
 def kg_to_grams (kg):
@@ -13,7 +13,7 @@ print (" 1. Kilometres to Miles")
 print (" 2. Celsius to Fahrenheit")
 print (" 3. Kilograms to grams")
 
-Choice = int (input ("Enter your choice (1-3): "))
+choice = int (input ("Enter your choice (1-3): "))
 Value = float (input ("Enter the value: "))
 
 if choice == 1:
